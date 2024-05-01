@@ -4,7 +4,7 @@
 ### common文件夹中为各模块文件：
 - functions 为必要的函数模块，并实现了交叉熵损失函数和softmax函数
 - gradient 为数值微分求导模块，利用微小的差分求导数
-- layers 实现了必要的神经网络的层类，如Relu、Sigmoid、Affine 和SoftmaxWithLos。其中每个函数均通过forword方法实现前向计算，backward方法实现反向传播来传递导数。在模块中也定义了Dropout，BatchNormalization，卷积层和池化层
+- layers 实现了必要的神经网络的层类，如Relu、Sigmoid、Affine 和SoftmaxWithLoss。其中每个函数均通过forword方法实现前向计算，backward方法实现反向传播来传递导数。在模块中也定义了Dropout，BatchNormalization，卷积层和池化层
 - util 模块中定义了打乱数据集的函数，im2col为实现卷积层展开快速矩阵的运算的函数，col2im为将运算后结果再次重构回原始结构
 - optimizer 模块定义各优化方法的类，如SGD、Momentum、AdaGrad、Adam等，被trainer类所调用实现模型的训练过程
 - multi_layer_net 模块实现了全连接的多层神经网络，具体参数在函数中有说明
