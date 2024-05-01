@@ -1,6 +1,6 @@
 # 从零开始构建三层神经网络分类器，实现图像分类
 
-### 其中common文件夹中为各模块：
+### 其中common文件夹中为各模块文件夹：
 - functions 为必要的函数模块
 - gradient 为数值求导模块
 - layers实现了必要的神经网络的层类，如Relu、Sigmoid、Affine 和SoftmaxWithLoss
@@ -10,5 +10,7 @@
 - multi_layer_net_extend实现了扩展版的全连接的多层神经网络，具有Weiht Decay、Dropout、Batch Normalization的功能，具体参数在函数中有说明
 - trainer定义了进行神经网络训练的类
 
-### 数据集：
-- 首先定义
+### Fashion_MNIST为数据集文件：
+- 里面有原始数据和传入数据的函数文件，支持normalize : 将图像的像素值正规化为0.0~1.0  <br> 
+    one_hot_label : one_hot_label为True的情况下，标签作为one-hot数组返回  <br> 
+    flatten : 是否将图像展开为一维数组  <br> 
