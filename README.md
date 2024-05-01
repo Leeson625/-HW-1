@@ -1,7 +1,7 @@
 # 从零开始构建三层神经网络分类器，实现图像分类
 > 模块实现部分参考书籍《深度学习入门：基于Python的理论与实现 (斋藤康毅)》
 
-### common文件夹中为各模块文件夹：
+### common文件夹中为各模块文件：
 - functions 为必要的函数模块，并实现了交叉熵损失函数和softmax函数
 - gradient 为数值微分求导模块，利用微小的差分求导数
 - layers 实现了必要的神经网络的层类，如Relu、Sigmoid、Affine 和SoftmaxWithLos。其中每个函数均通过forword方法实现前向计算，backward方法实现反向传播来传递导数。在模块中也定义了Dropout，BatchNormalization，卷积层和池化层
